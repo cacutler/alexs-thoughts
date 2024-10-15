@@ -1,0 +1,158 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header h1, h2{
+    color: cyan;
+    text-align: center;
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+}
+header{
+    background-color: darkgrey;
+    grid-row: 1 / 2;
+    grid-column: 2 / 8;
+}
+nav{
+    grid-row: 2 / 3;
+    grid-column: 2 / 8;
+    text-align: center;
+    background-color: lime;
+    font-weight: bold;
+    height: 25px;
+    padding: 1rem;
+}
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+}
+main{
+    grid-row: 3 / 5;
+    grid-column: 2 / 8;
+    background-color: aqua;
+}
+main p{
+    text-align: center;
+}
+#wrap{
+    display: grid;
+    grid-template-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0, 1fr) repeat(6, minmax(0px, 175px)) minmax(0, 1fr);
+}
+#macbookhero{
+    background-image: url(macbook.jpg);
+    background-size: cover;
+    height: 950px;
+    grid-row: 3 / 4;
+    grid-column: 2 / 8;
+    align-items: center;
+}
+#journalhero{
+    background-image: url(journal.jpg);
+    background-size: cover;
+    height: 1000px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 8;
+    align-items: center;
+}
+#utahtechhero{
+    background-image: url(utahtech.png);
+    background-size: cover;
+    height: 600px;
+    grid-row: 3 / 4;
+    grid-column: 2 / 8;
+    align-items: center;
+}
+#applelogohero{
+    background-image: url(apple_logo.png);
+    background-size: cover;
+    height: 600px;
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+    align-items: center;
+}
+footer{
+    text-align: center;
+    grid-row: 5 / 6;
+    grid-column: 2 / 8;
+    background-color: gray;
+}
+@media screen and (max-width:992px){
+    #wrap{
+        display: grid;
+        grid-template-rows: minmax(0px, auto);
+        grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0px, 768px) repeat(4, minmax(0, 1fr));
+    }
+    #macbookhero{
+        background-image: url(macbook.jpg);
+        background-size: cover;
+        height: 650px;
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        align-items: center;
+    }
+    #journalhero{
+        background-image: url(journal.jpg);
+        background-size: cover;
+        height: 650px;
+        grid-row: 4 / 5;
+        grid-column: 4 / 5;
+        align-items: center;
+    }
+    #utahtechhero{
+        background-image: url(utahtech.png);
+        background-size: cover;
+        height: 500px;
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        align-items: center;
+    }
+    #applelogohero{
+        background-image: url(apple_logo.png);
+        background-size: cover;
+        height: 300px;
+        grid-row: 4 / 5;
+        grid-column: 4 / 5;
+        align-items: center;
+    }
+}
+@media screen and (max-width:768px){
+    #wrap{
+        display: grid;
+        grid-template-rows: minmax(0px, auto);
+        grid-template-columns: repeat(4, minmax(auto, 1fr)) minmax(0px, 100%) repeat(4, minmax(auto, 1fr));
+    }
+    #macbookhero{
+        background-image: url(macbook.jpg);
+        background-size: cover;
+        height: 450px;
+        grid-row: 3 / 4;
+        grid-column: 4 / 4;
+        align-items: center;
+    }
+    #journalhero{
+        background-image: url(journal.jpg);
+        background-size: cover;
+        height: 450px;
+        grid-row: 4 / 5;
+        grid-column: 4 / 4;
+        align-items: center;
+    }
+    #utahtechhero{
+        background-image: url(utahtech.png);
+        background-size: cover;
+        height: 400px;
+        grid-row: 3 / 4;
+        grid-column: 4 / 4;
+        align-items: center;
+    }
+    #applelogohero{
+        background-image: url(apple_logo.png);
+        background-size: cover;
+        height: 300px;
+        grid-row: 4 / 5;
+        grid-column: 4 / 4;
+        align-items: center;
+    }
+}
